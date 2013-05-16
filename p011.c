@@ -29,8 +29,20 @@ int main() {
 		}
 	}
 	for(i=3;i<20;i++){
+		for(j=3;j<20;j++){
+			t=a[i][j]*a[i-1][j-1]*a[i-2][j-2]*a[i-3][j-3]; // up left
+			if(t>m){m=t;}
+		}
+	}
+	for(i=3;i<20;i++){
 		for(j=0;j<17;j++){
 			t=a[i][j]*a[i-1][j+1]*a[i-2][j+2]*a[i-3][j+3]; // up right
+			if(t>m){m=t;}
+		}
+	}
+	for(i=0;i<17;i++){
+		for(j=3;j<20;j++){
+			t=a[i][j]*a[i+1][j-1]*a[i+2][j-2]*a[i+3][j-3]; // down left
 			if(t>m){m=t;}
 		}
 	}
