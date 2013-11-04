@@ -14,7 +14,6 @@ int main() {
 			*(c+j)=r%10;
 			carry=r/10;
 			if(j==i+1){++q;}
-			//if(j==i+1){printf("n: %d\t",++q);}for(k=p-1;k>-1;k--){printf("%d",*(c+k));}printf("\n");}
 		}
 		if(q==1000){break;}
 	}
