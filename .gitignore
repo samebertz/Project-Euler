@@ -5,3 +5,7 @@ a.out
 # Vim swap files #
 ##################
 *.swp
+
+# Weird NFS files #
+###################
+.nfs*
