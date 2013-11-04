@@ -1,3 +1,7 @@
 # Standard compiled source #
 ############################
 a.out
+
+# Vim swap files #
+##################
+*.swp
